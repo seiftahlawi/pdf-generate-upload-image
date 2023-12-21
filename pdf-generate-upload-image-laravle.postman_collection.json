@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "c37c04df-d5e6-496a-9b1c-027e8935578e",
+		"name": "pdf-generate-upload-image-laravle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24001340",
+		"_collection_link": "https://lunar-sunset-437821.postman.co/workspace/amana-app~db6950e7-70c4-4c5c-9fe9-1527b051f889/collection/24001340-c37c04df-d5e6-496a-9b1c-027e8935578e?action=share&source=collection_link&creator=24001340"
+	},
+	"item": [
+		{
+			"name": "generate-pdf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\":\"cukur hello\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/generate-pdf",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"generate-pdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Image",
+							"type": "file",
+							"src": "/C:/Users/saif.tahlawi/OneDrive - Amana Capital L.T.D/Pictures/img/Afar-1676622715.svg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/upload-image",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"upload-image"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
